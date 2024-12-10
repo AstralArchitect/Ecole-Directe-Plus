@@ -39,7 +39,7 @@ app.all('/proxy', (req, res, next) => {
 				proxyReq.setHeader("referer", "https://www.ecoledirecte.com/");
 				proxyReq.setHeader("x-forwarded-server", "api.ecoledirecte.com");
 				proxyReq.setHeader("x-forwarded-host", "api.ecoledirecte.com");
-				proxyReq.setHeader("x-forwarded-for", "56.15.23.89");
+				//proxyReq.setHeader("x-forwarded-for", "56.15.23.89");
 				proxyReq.setHeader("host", new URL(req.query.url).host);
 			},
 			onError: (err, req, res) => {
