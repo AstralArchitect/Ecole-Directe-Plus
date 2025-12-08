@@ -11,11 +11,12 @@
     "crypto-js": "^4.1.1",
     "date-fns": "^3.6.0",
     "dompurify": "^3.1.0",
+    "express": "^5.1.0",
     "js-sha256": "^0.11.0",
     "react-content-loader": "^6.2.1",
     "react-router-dom": "^6.16.0",
     "uuid": "^9.0.1",
-    "vite": "^4.5.5"
+    "vite": "^4.5.14"
   },
   "devDependencies": {
     "@tauri-apps/cli": "^2"
@@ -24,7 +25,7 @@
     "dev": "vite",
     "domain": "vite --config vite.domain.config.js",
     "host": "vite --host",
-    "build": "vite build",
+    "build": "node build.js",
     "preview": "vite preview",
     "tauri": "tauri"
   },

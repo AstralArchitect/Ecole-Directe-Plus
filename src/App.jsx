@@ -131,7 +131,7 @@ const userBrowser = getBrowser();
 
 const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)');
 
-// get data from localstorage
+// get data from browser's localstorage
 const tokenFromLs = localStorage.getItem("token") ?? "";
 const token2faFromLs = localStorage.getItem("token2fa") ?? "";
 const accountListFromLs = JSON.parse(localStorage.getItem("accountsList") ?? "[]");
@@ -162,7 +162,7 @@ function initSettings(accountList) {
     // comment ajouter un setting :
     // userSettings ici ; defaultSettings
     const userSettings = [];
-    for (let i = 0; i < (accountList?.length || 1); i++) { //Si au login, il y a aucun compte d'enregistré on considère qu'il y a un seul compte
+    for (let i = 0; i < (accountList?.length || 1); i++) { // Si au login, il y a aucun compte d'enregistré on considère qu'il y a un seul compte
         userSettings.push({
             displayTheme: {
                 value: getSetting("displayTheme", i),

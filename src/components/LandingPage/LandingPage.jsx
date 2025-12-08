@@ -153,6 +153,7 @@ export default function LandingPage({ token, accountsList }) {
             <div className="text-center">
                 <h1>Découvrez <strong className="heading-emphasis">Ecole Directe Plus</strong></h1>
                 <p>EDP augmente EcoleDirecte, avec une interface moderne et intuitive, enrichie de fonctionnalités exclusives, le tout de façon gratuite, libre et open-source.</p>
+                <p>Attention ! Cet EDP tourne localement et n'est pas l'EDP officiel</p>
                 <Link to="/login" className="login-call-to-action">{isLoggedIn ? "Ouvrir l'app" : "Se connecter"}</Link>
             </div>
             <div className="fade-out-image">
