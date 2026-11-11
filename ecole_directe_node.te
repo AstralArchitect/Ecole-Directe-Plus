@@ -1,0 +1,11 @@
+
+module ecole_directe_node 1.0;
+
+require {
+	type httpd_t;
+	type bin_t;
+	class file entrypoint;
+}
+
+#============= httpd_t ==============
+allow httpd_t bin_t:file entrypoint;
